@@ -1,0 +1,17 @@
+SQL> select empna,ename,job,sal from scott.emp where job='SALESMAN';
+select empna,ename,job,sal from scott.emp where job='SALESMAN'
+       *
+第 1 行出现错误: 
+ORA-00904: "EMPNA": 标识符无效 
+
+
+SQL> select empno,ename,job,sal from scott.emp where job='SALESMAN';
+
+     EMPNO ENAME      JOB              SAL                                      
+---------- ---------- --------- ----------                                      
+      7499 ALLEN      SALESMAN        1600                                      
+      7521 WARD       SALESMAN        1250                                      
+      7654 MARTIN     SALESMAN        1250                                      
+      7844 TURNER     SALESMAN        1500                                      
+
+SQL> spool off
